@@ -1,4 +1,4 @@
-let calculator = require("../src/calculator")
+let calculator = require("../src/simple_calculator")
 
 describe("add function", function(){
     it("adds two numbers and returns the sum", function(){
@@ -26,5 +26,10 @@ describe("multiply function", function(){
     it("multiply multiple numbers and returns the product", function(){
         expect(calculator.multiply(1,2,3,4)).toBe(24)
     })
+
+    it("multiply negative numbers and returns the product", function(){
+         expect(calculator.multiply(-1,-1)).toBe(1)
+    })
+
 
 })
